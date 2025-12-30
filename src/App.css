@@ -1,0 +1,129 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fa;
+}
+
+/* TOP BAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 30px;
+  background: #eaeaea;
+  font-size: 14px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #1c3c54;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #fdb813;
+}
+
+/* HERO */
+.hero-img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  background: rgba(0,0,0,0.6);
+  padding: 25px;
+  color: white;
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* PAGE */
+.page {
+  padding: 60px 80px;
+}
+
+/* CARDS */
+.card-container {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* FORM */
+.form input, .form button {
+  display: block;
+  width: 320px;
+  padding: 12px;
+  margin: 12px 0;
+}
+
+.form button {
+  background: #1c3c54;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: #163042;
+}
+
+/* ADMIN TABLE */
+.admin-table {
+  background: white;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+.admin-table th, .admin-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: #1c3c54;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
